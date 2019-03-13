@@ -1,0 +1,81 @@
+PYTHON
+https://docs.python.org/3/tutorial/
+
+
+1. Whetting Your Appetite
+	very high level language
+	high level data types (flexible arrays and dictionaries)
+	Interpreted Language: no compilarion and linking necessary
+	emphasizes compactibility and readability
+	Extensible: can link to link to C or other language files
+	Named after "Monty Python's Flying Circus"
+3. Informal Introduction to Python
+
+
+Math
+	>>> 17 / 3
+	5.6666666667
+	>>> 17 // 3 #floor
+	5
+	>>> 17 % 3 # remainder
+	2
+	>>> 5 ** 2 # square
+	25
+Variables not declared
+width = 20
+
+
+Strings: single or double quotes
+Indexed: s[0] for first, s[-1] for last
+Immutable: cannot change individual char (must create new string)
+Slicing: s[:2] first 2; s[1:] everything but first char [)
+	no error if slice too far: word[1000:] -> ''
+Length: len(s)
+
+>>> 'spam eggs'
+'spam eggs'
+>>> 'doesn\'t' #cancel '
+"doesn't"
+"""\
+Multiline String:
+	can get rid of leading return with \
+	after initial triple-quote
+"""
+concatecate strings with +
+'Py' + 'thon'
+
+Printing
+print() #ends with \n new line
+
+
+Lists
+Indexing list[1]
+Slicing list[2:] [)
+Concatecation with +
+Mutable: can change individual item list[2] = 1
+list.append(1)
+
+squares = [1, 4, 9, 16, 25]
+
+
+Loops
+
+Fibonacci
+a, b = 0,1
+while a < 10:
+	print(a)
+	a, b = b, a+b
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
