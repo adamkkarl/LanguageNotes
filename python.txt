@@ -5,14 +5,21 @@ https://docs.python.org/3/tutorial/
 1. Whetting Your Appetite
 	very high level language
 	high level data types (flexible arrays and dictionaries)
-	Interpreted Language: no compilarion and linking necessary
+	Interpreted Language: no compilation and linking necessary
 	emphasizes compactibility and readability
 	Extensible: can link to link to C or other language files
 	Named after "Monty Python's Flying Circus"
 3. Informal Introduction to Python
 
+Variables
+not explicitly declared: x = 50
+delete: del x
 
 Math
+range: range(5) returns [0,1,2,3,4]
+			 range(5,10) -> [5,6,7,8,90]
+			 range(5,20,2) ->[5,7,9,11,13,15,17,19]
+float + int in same statement ==> convert to all floats
 	>>> 17 / 3
 	5.6666666667
 	>>> 17 // 3 #floor
@@ -25,12 +32,22 @@ Variables not declared
 width = 20
 
 
+DATA STRUCTURES
+mutable/immutable
+create empty structure
+
+
+
 Strings: single or double quotes
 Indexed: s[0] for first, s[-1] for last
 Immutable: cannot change individual char (must create new string)
 Slicing: s[:2] first 2; s[1:] everything but first char [)
 	no error if slice too far: word[1000:] -> ''
-Length: len(s)
+Length: len(s)   str->int
+concatecate strings with +
+'Py' + 'thon'
+Printing:	print() #ends with \n new line
+		print("text", end="") #no new newline
 
 >>> 'spam eggs'
 'spam eggs'
@@ -41,22 +58,42 @@ Multiline String:
 	can get rid of leading return with \
 	after initial triple-quote
 """
-concatecate strings with +
-'Py' + 'thon'
 
-Printing
-print() #ends with \n new line
+>>> print('C:\some\name')  # here \n means newline!
+C:\some
+ame
+>>> print(r'C:\some\name')  # note the r before the quote
+C:\some\name
+
+
 
 
 Lists
+list = ['a','b','c','d']
+Append: list.append(x)
+
+Length len(list)
 Indexing list[1]
-Slicing list[2:] [)
+Slicing list[2:] [inclusive, exclusive]
 Concatecation with +
+Pop: list.pop([i]) remove & return item at pos i (default last item)
 Mutable: can change individual item list[2] = 1
-list.append(1)
 
-squares = [1, 4, 9, 16, 25]
+Other Funcs
+list.clear() #remove all items
+list.count(x) #number of times element x appears in list
+list.sort(key=None, reverse=false) #in-place sort
+list.reverse() #in-place reverse
+list.copy()
 
+List Comprehension
+squares = []
+for x in range(10):
+	squares.append(x**2)
+=====
+squares = list(map(lambda x : x**2, range(10)))
+=====
+squares = [x**2 for x in range(10)]
 
 Loops
 
@@ -68,14 +105,31 @@ while a < 10:
 
 
 
+CONTROL FLOW
+if x > 0:
+	print("positive")
+elif x == 0:
+	print("zero")
+else:
+	print("negative")
+
+for each
+words = ['cat', 'window', 'defenestrate']
+for w in words:
+	print(w, len(w))
+
+TUPLES
+immutable, can hold multiple data types
+t = 12345, 54321, 'hello!'
+print(t[0])
+can use len(t)
+
+empty = ()
+singleton = 'hello',  #trailing comma
 
 
-
-
-
-	
-	
-	
-	
-	
-	
+5.4 Sets
+basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+'orange' in basket -> True
+a = set('abracadabra') -> {'a','r','b','c','d'}
+b = set() #empty set   {} ->empty dictionary
