@@ -13,6 +13,7 @@ https://docs.python.org/3/tutorial/
 
 Variables
 not explicitly declared: x = 50
+type(x) return type of var
 delete: del x
 
 Math
@@ -132,4 +133,4 @@ singleton = 'hello',  #trailing comma
 basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
 'orange' in basket -> True
 a = set('abracadabra') -> {'a','r','b','c','d'}
-b = set() #empty set   {} ->empty dictionary
+b = set() #empty set   {} is empty dictionary
