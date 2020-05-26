@@ -8,9 +8,43 @@ Basic HTML format:
 <!doctype html> //html5 tag
 <html>
   <head>
+  <meta charset = "utf-8"> //required as first thing in head
               //tells browser about the page
   </head>
   <body>
               page contents
   </body>
 </html>
+
+SEMANTIC MARKUP - embeds purpose in page structure
+these tags (within the body) have NO visual impact, just gives structure
+<header>
+<nav>
+<main>
+<footer>
+
+HEADINGS - human readable names to tags
+by default they change textsize, but should use CSS to format instead
+<h1> through <h6>
+<h1> Chapter 1
+  <h2> Test
+    <h3> blah
+
+HTML ignores whitespace
+  <p> start new paragraph
+  <p> another paragraph
+
+LISTS
+<ol> ordered (numbered) list
+<ul> unordered (bulleted) list
+  <li> list item
+
+<ol>
+  <li> Beat eggs
+  <li> Add milk
+</ol>
+
+HYPERTEXT
+<a> for link
+<a href= "http://www. ... .com"> my site </a>
+  attribute                    clickable text
