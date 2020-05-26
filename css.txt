@@ -1,0 +1,33 @@
+CSS - Cascading Style Sheets
+  domain specific language for styling visual content
+
+CSS file contains rules
+h1 {                  //selector
+  font-size: 200%;    //declaration block
+  font-weight: bold;
+}
+
+WHERE TO PUT CSS - 3 places
+<head>
+  <link rel = "stylesheet" href="style.css"> //1: separate file in same directory
+                                             // (usually the best option)
+
+  <style>              //2: in style block in head (not recommended)
+    h1 {font-size:200%}
+  </style>
+</head>
+<body>
+  <h1 style = "color:red;"> Hello </h1> //3: around contents (not recommended)
+</body>
+
+ONE CSS FILE, MANY HTML FILES
+best practice, all HTML files point to same CSS file
+(also good for changing the theme across the site)
+
+CSS CLASSES - category you can put elements into
+(think Venn diagram)
+
+<h1 class="special"> Fancy Header </h1> //html
+.special {                  //css
+  color: blue;
+}
