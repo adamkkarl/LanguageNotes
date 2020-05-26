@@ -1,0 +1,16 @@
+HTML - Hypertext Markup Language
+Declarative language (not programming language)
+
+Tag: <tagname>
+Bold text: <em> emphasized text </em>
+
+Basic HTML format:
+<!doctype html> //html5 tag
+<html>
+  <head>
+              //tells browser about the page
+  </head>
+  <body>
+              page contents
+  </body>
+</html>
