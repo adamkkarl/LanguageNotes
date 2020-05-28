@@ -48,3 +48,6 @@ HYPERTEXT
 <a> for link
 <a href= "http://www. ... .com"> my site </a>
   attribute                    clickable text
+
+
+TODO: common tags
