@@ -31,3 +31,47 @@ CSS CLASSES - category you can put elements into
 .special {                  //css
   color: blue;
 }
+
+
+IDs
+used for unique items (identifier can be used once per page)
+<img id="site_logo" src = "logo.png"> //HTML
+#site_logo { //CSS
+  border = 2px solid black;
+}
+
+Linking to IDs
+used to link to a part of a page
+<a href = "materials.html#examples"> look at examples </a>
+
+Selectors
+query for the items that match a criteria
+
+"primitive" selectors
+.special //select ALL class="special" element
+#site_logo //selects ONE id="site_logo" element
+img //select ALL <img> elements
+* //select ALL elements
+a.outgoing  //<a> element with outgoing class
+
+h1, a, .important {   //ORs multiple selectors together
+  font-style italic;
+}
+
+child selector
+.topnav > * {...} //immediate children of topnav
+
+descendant selector
+main a {...} //ALL <a> elements descended from main
+
+pseudoclasses
+most common on links
+:not  :first  :checked  ...
+a:link  a:active  //unvisited links
+a:hover   a:focus   //about to visit
+a:visited   //visited
+
+Combining Selectors arbitrarily
+.a > .b > .c  //children of
+a.outgoing:visited
+footer > *
